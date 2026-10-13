@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main()
+{
+    int distance;
+
+    printf("Enter obstacle distance in cm: ");
+    scanf("%d", &distance);
+
+    if(distance < 10)
+        printf("Obstacle Very Near");
+    else if(distance <= 50)
+        printf("Obstacle at Safe Distance");
+    else
+        printf("Obstacle Far Away");
+
+    return 0;
+}
