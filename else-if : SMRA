@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main()
+{
+    int strength;
+
+    printf("Enter material strength in MPa: ");
+    scanf("%d", &strength);
+
+    if(strength < 100)
+        printf("Low Strength Material");
+    else if(strength <= 300)
+        printf("Medium Strength Material");
+    else
+        printf("High Strength Material");
+
+    return 0;
+}
