@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main()
+{
+    int pressure;
+
+    printf("Enter pressure in kPa: ");
+    scanf("%d", &pressure);
+
+    if(pressure < 30)
+        printf("Low Pressure");
+    else if(pressure <= 80)
+        printf("Medium Pressure");
+    else
+        printf("High Pressure");
+
+    return 0;
+}
