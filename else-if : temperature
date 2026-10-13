@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main()
+{
+    int temp;
+
+    printf("Enter robot motor temperature: ");
+    scanf("%d", &temp);
+
+    if(temp < 20)
+        printf("Motor Temperature Low");
+    else if(temp <= 60)
+        printf("Motor Temperature Normal");
+    else
+        printf("Motor Temperature High");
+
+    return 0;
+}
