@@ -1,0 +1,13 @@
+#include <stdio.h>
+void main() 
+{
+  int sensor1 , sensor2 , div ;
+  // clrscr();
+  printf("Reading from sensor1 :");
+  scanf("%d",&sensor1");
+  printf("Reading from sensor2 :");
+  scanf("%d",&sensor2");
+  sum=sensor1/sensor2;
+  printf("div=%d",div);
+  // getch();
+}
