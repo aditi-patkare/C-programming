@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main()
+{
+    int units;
+
+    printf("Enter units: ");
+    scanf("%d", &units);
+
+    if(units <= 100)
+        printf("Low Consumption");
+    else if(units <= 300)
+        printf("Medium Consumption");
+    else
+        printf("High Consumption");
+
+    return 0;
+}
