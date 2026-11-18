@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include <conio.h>
+
+void main()
+{
+    int ch;
+    float r,l,b;
+    clrscr();
+
+    printf("1.Circle\n");
+    printf("2.Rectangle\n");
+    printf("3.Square\n");
+
+    printf("Enter choice: ");
+    scanf("%d",&ch);
+
+    switch(ch)
+    {
+        case 1:
+            printf("Enter radius: ");
+            scanf("%f",&r);
+            printf("Area = %.2f",3.14*r*r);
+            break;
+
+        case 2:
+            printf("Enter length and breadth: ");
+            scanf("%f%f",&l,&b);
+            printf("Area = %.2f",l*b);
+            break;
+
+        case 3:
+            printf("Enter side: ");
+            scanf("%f",&l);
+            printf("Area = %.2f",l*l);
+            break;
+
+        default:
+            printf("Invalid Choice");
+    }
+
+    getch();
+}
